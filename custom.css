@@ -1,0 +1,18 @@
+
+/* custom.css — мінімальні override */
+/* Власний шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Плавна прокрутка */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero: мінімальна висота */
+.hero-section {
+  min-height: 90vh;
+}
