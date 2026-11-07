@@ -11,6 +11,10 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./custom.css" />
   </head>
   <!-- DOCTYPE, head, Bootstrap CDN тут -->
@@ -71,20 +75,20 @@
             <!-- Лівий блок — текст -->
             <div class="col-lg-6 order-2 order-lg-1">
               <span
-                class="badge bg-primary bg-opacity-25 text-primary-emphasis mb-3 px-3 py-2"
+                class="badge bg-primary bg-opacity-25 text-primary-emphasis mb-3 px-3 py-2 animate__animated animate__backInDown"
               >
                 🚀 Топ агентство 2024
               </span>
-              <h1 class="display-4 fw-bold lh-sm mb-4">
+              <h1 class="display-4 fw-bold lh-sm mb-4 animate__animated animate__slideInLeft">
                 Будуємо сайти, що <span class="text-primary">продають</span>
               </h1>
-              <p class="lead text-white-50 mb-4">
+              <p class="lead text-white-50 mb-4 animate__animated animate__slideInRight">
                 Розробляємо швидкі, красиві і конверсійні сайти для бізнесу. Від
                 ідеї до продажу за 2 тижні.
               </p>
 
               <!-- Кнопки -->
-              <div class="d-flex flex-wrap gap-3 mb-5">
+              <div class="d-flex flex-wrap gap-3 mb-5 animate__animated animate__bounce">
                 <button
                   class="btn btn-primary btn-lg px-4"
                   data-bs-toggle="modal"
@@ -98,16 +102,16 @@
               </div>
 
               <!-- Лічильники -->
-              <div class="row g-3">
-                <div class="col-auto">
+              <div class="row g-3 ">
+                <div class="col-auto animate__animated animate__backInLeft">
                   <div class="fs-3 fw-bold text-primary">120+</div>
                   <div class="text-white-50 small">проєктів</div>
                 </div>
-                <div class="col-auto px-4 border-start border-secondary">
+                <div class="col-auto px-4 border-start border-secondary animate__animated animate__backInUp">
                   <div class="fs-3 fw-bold text-primary">98%</div>
                   <div class="text-white-50 small">задоволені</div>
                 </div>
-                <div class="col-auto ps-4 border-start border-secondary">
+                <div class="col-auto ps-4 border-start border-secondary animate__animated animate__backInRight">
                   <div class="fs-3 fw-bold text-primary">5 р.</div>
                   <div class="text-white-50 small">на ринку</div>
                 </div>
@@ -340,7 +344,7 @@
 
               <div class="accordion" id="faqAccordion">
                 <div
-                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden"
+                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden" data-aos="flip-down"
                 >
                   <h3 class="accordion-header">
                     <button
@@ -363,7 +367,7 @@
                   </div>
                 </div>
                 <div
-                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden"
+                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden" data-aos="flip-up"
                 >
                   <h3 class="accordion-header">
                     <button
@@ -385,7 +389,7 @@
                   </div>
                 </div>
                 <div
-                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden"
+                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden" data-aos="flip-down"
                 >
                   <h3 class="accordion-header">
                     <button
@@ -408,7 +412,7 @@
                   </div>
                 </div>
                 <div
-                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden"
+                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden" data-aos="flip-up"
                 >
                   <h3 class="accordion-header">
                     <button
@@ -430,7 +434,7 @@
                   </div>
                 </div>
                 <div
-                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden"
+                  class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden" data-aos="flip-down"
                 >
                   <h3 class="accordion-header">
                     <button
@@ -536,16 +540,16 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="bg-dark text-white py-5" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
       <div class="container">
         <div class="row g-4">
           <div class="col-md-4">
             <h5 class="fw-bold mb-3">🚀 NovaBuild</h5>
-            <p class="text-white-50">Будуємо сайти що продають. З 2019 року.</p>
+            <p class="text-white-50" data-aos="fade-down">Будуємо сайти що продають. З 2019 року.</p>
           </div>
           <div class="col-md-4">
-            <h6 class="text-uppercase text-white-50 small mb-3">Навігація</h6>
-            <ul class="list-unstyled">
+            <h6 class="text-uppercase text-white-50 small mb-3" data-aos="fade-up">Навігація</h6>
+            <ul class="list-unstyled" data-aos="fade-left">
               <li>
                 <a href="#features" class="text-white-50 text-decoration-none"
                   >Послуги</a
@@ -564,9 +568,9 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h6 class="text-uppercase text-white-50 small mb-3">Контакти</h6>
-            <p class="text-white-50 mb-1">📧 hello@novabuild.ua</p>
-            <p class="text-white-50">📱 +380 50 123 4567</p>
+            <h6 class="text-uppercase text-white-50 small mb-3" data-aos="fade-up">Контакти</h6>
+            <p class="text-white-50 mb-1" data-aos="fade-right">📧 hello@novabuild.ua</p>
+            <p class="text-white-50" data-aos="fade-right">📱 +380 50 123 4567</p>
           </div>
         </div>
         <hr class="border-secondary my-4" />
