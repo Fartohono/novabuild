@@ -311,7 +311,7 @@
                   <h5 class="fw-bold mb-1">Enterprice</h5>
                   <p class="text-white-75 mb-3">Для зростаючого бізнесу</p>
                   <div class="display-5 fw-bold mb-4">
-                    $799<small class="fs-6 text-white-75 fw-normal"
+                    Індив<small class="fs-6 text-white-75 fw-normal"
                       >/проєкт</small
                     >
                   </div>
@@ -534,6 +534,22 @@
                 Відправити заявку
               </button>
             </form>
+            <div id="successMessage" class="text-center d-none">
+  <div id="successAnimation"></div>
+
+  <h4 class="fw-bold">Заявку заповнено!</h4>
+  <p class="text-muted">
+    Дякуємо! Це демонстрація успішного заповнення.
+  </p>
+
+  <button
+    type="button"
+    class="btn btn-primary mt-3"
+    data-bs-dismiss="modal"
+  >
+    Закрити
+  </button>
+</div>
           </div>
         </div>
       </div>
@@ -579,14 +595,21 @@
         </p>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100,
-      });
-    </script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="./modal.js"></script>
   </body>
 </html>
