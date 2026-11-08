@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         renderer: "svg",
         loop: false,
         autoplay: true,
-        path: "./success.json"
+        path: "./Success.json"
       });
     } else {
       animation.goToAndPlay(0, true);
