@@ -47,3 +47,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+let lottiePromise;
+
+function loadLottie() {
+  if (window.lottie) {
+    return Promise.resolve(window.lottie);
+  }
+
+  if (!lottiePromise) {
+    lottiePromise = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+
+      script.src =
+        "https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js";
+
+      script.onload = () => resolve(window.lottie);
+      script.onerror = reject;
+
+      document.body.appendChild(script);
+    }).catch(error => {
+      lottiePromise = null;
+      throw error;
+    });
+  }
+
+  return lottiePromise;
+}
+loadLottie().then(lottie => {
+  animation = lottie.loadAnimation({
+    container: animationContainer,
+    renderer: "svg",
+    loop: false,
+    autoplay: true,
+    path: "./Success.json"
+  });
+}).catch(error => {
+  console.error("Lottie не завантажився:", error);
+});
